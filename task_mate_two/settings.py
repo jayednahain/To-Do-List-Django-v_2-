@@ -30,7 +30,7 @@ SECRET_KEY = 'ax#*7hda(!*c5a49mk2)b1d$ww$h+azbzs_%7tv&*!bc(z60_i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://to-do-list-69.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
