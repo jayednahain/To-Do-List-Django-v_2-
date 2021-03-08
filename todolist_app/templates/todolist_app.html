@@ -54,17 +54,17 @@
                     {% if task.done %}
                         <tr class="table-success row">
                             <td class="col-5">{{ task.task }}</td>
-                            <td class="col-4"><a href="{% url 'pending_task_link' task.id %}"><img src="{% static 'todolist_app/image/checked-blacked.png' %}" width="40" height="40"></a></td>
-                            <td class="col-2"><a class="btn btn-dark" href="{% url 'edit_task_link' task.id %}">Edit</a></td>
-                            <td class="col-1"><a href="{% url 'delete_task_link' task.id %}"><img src="{% static 'todolist_app/image/delete-button.png' %}" width="40" height="30"></a></td>
+                            <td class="col-4"><a href="{% url 'pending_task_link' task.id %}"><img src="{% static 'todolist_app/image/checked-blacked.png' %}" width="40" height="40" alt="click_blacked"></a></td>
+                            <td class="col-2"><a class="btn btn-dark" href="{% url 'edit_task_link' task.id %} ">Edit</a></td>
+                            <td class="col-1"><a href="{% url 'delete_task_link' task.id %}"><img src="{% static 'todolist_app/image/delete-button.png' %}" width="40" height="30" alt="click_delet"></a></td>
 
                         </tr>
                     {% else %}
                         <tr class="row">
                             <td class="col-5">{{ task.task }}</td>
-                            <td class="col-4"><a href="{% url 'complete_task_link' task.id %}"><img src="{% static 'todolist_app/image/check-white.png' %}" width="40" height="40"></a> </td>
+                            <td class="col-4"><a href="{% url 'complete_task_link' task.id %}"><img src="{% static 'todolist_app/image/check-white.png' %}" alt="click_white" width="40" height="40"></a> </td>
                             <td class="col-2"><a class="btn btn-dark" href="{% url 'edit_task_link' task.id %}">Edit</a></td>
-                            <td class="col-1"><a href="{% url 'delete_task_link' task.id %}"><img src="{% static 'todolist_app/image/delete-button.png' %}" width="40" height="30"></a></td>
+                            <td class="col-1"><a href="{% url 'delete_task_link' task.id %}"><img src="{% static 'todolist_app/image/delete-button.png' %}" alt="alt="click_delete" width="40" height="30"></a></td>
                         </tr>
                     {% endif %}
                 {% endfor %}
